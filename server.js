@@ -12,7 +12,7 @@ app.use('/api/v1', allRoutes);
 
 app.use(function (err, req, res, next) {
     return res.status(500)
-    .send({ "statusCode": 500, "statusMessage": 'SOMETHING WENT WRONG!' });
+    .send({ "statusCode": 500, "statusMessage": 'Internal server error!' });
 });
 
 const PORT = config.PORT;
